@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "seo-icon-analytics-icon-search-icon-png-favpng-7uwh2ifWwprKi7PGTJXmzyQym.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

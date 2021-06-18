@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="UserDetails" representedClassName="UserDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="access_token" attributeType="String"/>
+        <attribute name="avatar" attributeType="String"/>
+        <attribute name="avatarpng" optional="YES" attributeType="Binary"/>
+        <attribute name="email" attributeType="String"/>
+        <attribute name="expires_at" attributeType="String"/>
+        <attribute name="firstname" attributeType="String"/>
+        <attribute name="ids" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastname" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="UserDetails" positionX="-63" positionY="-18" width="128" height="163"/>
+    </elements>
+</model>

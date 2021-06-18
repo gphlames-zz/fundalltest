@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D4691A3AC426214AFC58F49 /* Pods_fundallminiproject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B593025B182E767DF21431 /* Pods_fundallminiproject.framework */; };
+		CE89CE6C26779593000724FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE6B26779593000724FA /* AppDelegate.swift */; };
+		CE89CE6E26779593000724FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE6D26779593000724FA /* SceneDelegate.swift */; };
+		CE89CE7026779593000724FA /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE6F26779593000724FA /* firstViewController.swift */; };
+		CE89CE7326779593000724FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE89CE7126779593000724FA /* Main.storyboard */; };
+		CE89CE7626779593000724FA /* fundallminiproject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE7426779593000724FA /* fundallminiproject.xcdatamodeld */; };
+		CE89CE7826779598000724FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE89CE7726779598000724FA /* Assets.xcassets */; };
+		CE89CE7B26779598000724FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE89CE7926779598000724FA /* LaunchScreen.storyboard */; };
+		CE89CE862677FDDF000724FA /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE852677FDDF000724FA /* signInViewController.swift */; };
+		CE89CE8826782FA0000724FA /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE8726782FA0000724FA /* loginViewController.swift */; };
+		CE89CE8A2678BD2F000724FA /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE892678BD2F000724FA /* homeViewController.swift */; };
+		CE89CE8C2678BFAC000724FA /* pickCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE8B2678BFAC000724FA /* pickCardViewController.swift */; };
+		CE89CE922678C9CB000724FA /* dataOfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE912678C9CB000724FA /* dataOfApp.swift */; };
+		CE89CE942678E32A000724FA /* logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE932678E32A000724FA /* logic.swift */; };
+		CE89CE962679227B000724FA /* finalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE952679227B000724FA /* finalPageViewController.swift */; };
+		CE89CE98267A3EB6000724FA /* analyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE97267A3EB6000724FA /* analyticsViewController.swift */; };
+		CE89CE9A267A3EEC000724FA /* analysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE99267A3EEC000724FA /* analysisView.swift */; };
+		CE89CE9D267B38DA000724FA /* analyticsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CE9B267B38D9000724FA /* analyticsTableViewCell.swift */; };
+		CE89CE9E267B38DA000724FA /* analyticsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE89CE9C267B38D9000724FA /* analyticsTableViewCell.xib */; };
+		CE89CEA3267B3C85000724FA /* analyticCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CEA1267B3C85000724FA /* analyticCollectionViewCell.swift */; };
+		CE89CEA4267B3C85000724FA /* analyticCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE89CEA2267B3C85000724FA /* analyticCollectionViewCell.xib */; };
+		CE89CEA7267C0EE5000724FA /* pickCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CEA5267C0EE5000724FA /* pickCardCollectionViewCell.swift */; };
+		CE89CEAB267CA49B000724FA /* pickCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89CEA9267CA49B000724FA /* pickCardTableViewCell.swift */; };
+		CE89CEAC267CA49B000724FA /* pickCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE89CEAA267CA49B000724FA /* pickCardTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79B593025B182E767DF21431 /* Pods_fundallminiproject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fundallminiproject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE89CE6826779593000724FA /* fundallminiproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fundallminiproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE89CE6B26779593000724FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE89CE6D26779593000724FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE89CE6F26779593000724FA /* firstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
+		CE89CE7226779593000724FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE89CE7526779593000724FA /* fundallminiproject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fundallminiproject.xcdatamodel; sourceTree = "<group>"; };
+		CE89CE7726779598000724FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE89CE7A26779598000724FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE89CE7C26779598000724FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE89CE852677FDDF000724FA /* signInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInViewController.swift; sourceTree = "<group>"; };
+		CE89CE8726782FA0000724FA /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		CE89CE892678BD2F000724FA /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		CE89CE8B2678BFAC000724FA /* pickCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickCardViewController.swift; sourceTree = "<group>"; };
+		CE89CE912678C9CB000724FA /* dataOfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataOfApp.swift; sourceTree = "<group>"; };
+		CE89CE932678E32A000724FA /* logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logic.swift; sourceTree = "<group>"; };
+		CE89CE952679227B000724FA /* finalPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalPageViewController.swift; sourceTree = "<group>"; };
+		CE89CE97267A3EB6000724FA /* analyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = analyticsViewController.swift; sourceTree = "<group>"; };
+		CE89CE99267A3EEC000724FA /* analysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = analysisView.swift; sourceTree = "<group>"; };
+		CE89CE9B267B38D9000724FA /* analyticsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = analyticsTableViewCell.swift; sourceTree = "<group>"; };
+		CE89CE9C267B38D9000724FA /* analyticsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = analyticsTableViewCell.xib; sourceTree = "<group>"; };
+		CE89CEA1267B3C85000724FA /* analyticCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = analyticCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE89CEA2267B3C85000724FA /* analyticCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = analyticCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE89CEA5267C0EE5000724FA /* pickCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE89CEA9267CA49B000724FA /* pickCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickCardTableViewCell.swift; sourceTree = "<group>"; };
+		CE89CEAA267CA49B000724FA /* pickCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = pickCardTableViewCell.xib; sourceTree = "<group>"; };
+		D183027289E3F1C4F7994E9C /* Pods-fundallminiproject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fundallminiproject.debug.xcconfig"; path = "Target Support Files/Pods-fundallminiproject/Pods-fundallminiproject.debug.xcconfig"; sourceTree = "<group>"; };
+		DA1D9862A01A8692711B932E /* Pods-fundallminiproject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fundallminiproject.release.xcconfig"; path = "Target Support Files/Pods-fundallminiproject/Pods-fundallminiproject.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE89CE6526779593000724FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4691A3AC426214AFC58F49 /* Pods_fundallminiproject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10A4F0DBEF943A08C7BF9FF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79B593025B182E767DF21431 /* Pods_fundallminiproject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		449D7A462242F2D2224DA251 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D183027289E3F1C4F7994E9C /* Pods-fundallminiproject.debug.xcconfig */,
+				DA1D9862A01A8692711B932E /* Pods-fundallminiproject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE89CE5F26779593000724FA = {
+			isa = PBXGroup;
+			children = (
+				CE89CE6A26779593000724FA /* fundallminiproject */,
+				CE89CE6926779593000724FA /* Products */,
+				449D7A462242F2D2224DA251 /* Pods */,
+				10A4F0DBEF943A08C7BF9FF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE89CE6926779593000724FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE89CE6826779593000724FA /* fundallminiproject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE89CE6A26779593000724FA /* fundallminiproject */ = {
+			isa = PBXGroup;
+			children = (
+				CE89CE6B26779593000724FA /* AppDelegate.swift */,
+				CE89CE6D26779593000724FA /* SceneDelegate.swift */,
+				CE89CE82267795CB000724FA /* Model */,
+				CE89CE83267795D2000724FA /* View */,
+				CE89CE84267795DD000724FA /* Controller */,
+				CE89CE7726779598000724FA /* Assets.xcassets */,
+				CE89CE7926779598000724FA /* LaunchScreen.storyboard */,
+				CE89CE7C26779598000724FA /* Info.plist */,
+				CE89CE7426779593000724FA /* fundallminiproject.xcdatamodeld */,
+			);
+			path = fundallminiproject;
+			sourceTree = "<group>";
+		};
+		CE89CE82267795CB000724FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE89CE912678C9CB000724FA /* dataOfApp.swift */,
+				CE89CE932678E32A000724FA /* logic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE89CE83267795D2000724FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE89CE7126779593000724FA /* Main.storyboard */,
+				CE89CE99267A3EEC000724FA /* analysisView.swift */,
+				CE89CE9B267B38D9000724FA /* analyticsTableViewCell.swift */,
+				CE89CE9C267B38D9000724FA /* analyticsTableViewCell.xib */,
+				CE89CEA1267B3C85000724FA /* analyticCollectionViewCell.swift */,
+				CE89CEA2267B3C85000724FA /* analyticCollectionViewCell.xib */,
+				CE89CEA5267C0EE5000724FA /* pickCardCollectionViewCell.swift */,
+				CE89CEA9267CA49B000724FA /* pickCardTableViewCell.swift */,
+				CE89CEAA267CA49B000724FA /* pickCardTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE89CE84267795DD000724FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE89CE6F26779593000724FA /* firstViewController.swift */,
+				CE89CE852677FDDF000724FA /* signInViewController.swift */,
+				CE89CE8726782FA0000724FA /* loginViewController.swift */,
+				CE89CE892678BD2F000724FA /* homeViewController.swift */,
+				CE89CE8B2678BFAC000724FA /* pickCardViewController.swift */,
+				CE89CE952679227B000724FA /* finalPageViewController.swift */,
+				CE89CE97267A3EB6000724FA /* analyticsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE89CE6726779593000724FA /* fundallminiproject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE89CE7F26779598000724FA /* Build configuration list for PBXNativeTarget "fundallminiproject" */;
+			buildPhases = (
+				349718DEBBD6C1A56A4FA6F5 /* [CP] Check Pods Manifest.lock */,
+				CE89CE6426779593000724FA /* Sources */,
+				CE89CE6526779593000724FA /* Frameworks */,
+				CE89CE6626779593000724FA /* Resources */,
+				A0E363CE9E646A8B12F71B3D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fundallminiproject;
+			productName = fundallminiproject;
+			productReference = CE89CE6826779593000724FA /* fundallminiproject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE89CE6026779593000724FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CE89CE6726779593000724FA = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = CE89CE6326779593000724FA /* Build configuration list for PBXProject "fundallminiproject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE89CE5F26779593000724FA;
+			productRefGroup = CE89CE6926779593000724FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE89CE6726779593000724FA /* fundallminiproject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE89CE6626779593000724FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE89CEA4267B3C85000724FA /* analyticCollectionViewCell.xib in Resources */,
+				CE89CE7B26779598000724FA /* LaunchScreen.storyboard in Resources */,
+				CE89CE7826779598000724FA /* Assets.xcassets in Resources */,
+				CE89CE9E267B38DA000724FA /* analyticsTableViewCell.xib in Resources */,
+				CE89CEAC267CA49B000724FA /* pickCardTableViewCell.xib in Resources */,
+				CE89CE7326779593000724FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		349718DEBBD6C1A56A4FA6F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fundallminiproject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0E363CE9E646A8B12F71B3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fundallminiproject/Pods-fundallminiproject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fundallminiproject/Pods-fundallminiproject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fundallminiproject/Pods-fundallminiproject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE89CE6426779593000724FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE89CE8A2678BD2F000724FA /* homeViewController.swift in Sources */,
+				CE89CE9D267B38DA000724FA /* analyticsTableViewCell.swift in Sources */,
+				CE89CE922678C9CB000724FA /* dataOfApp.swift in Sources */,
+				CE89CEA7267C0EE5000724FA /* pickCardCollectionViewCell.swift in Sources */,
+				CE89CE962679227B000724FA /* finalPageViewController.swift in Sources */,
+				CE89CE7026779593000724FA /* firstViewController.swift in Sources */,
+				CE89CE98267A3EB6000724FA /* analyticsViewController.swift in Sources */,
+				CE89CE942678E32A000724FA /* logic.swift in Sources */,
+				CE89CEA3267B3C85000724FA /* analyticCollectionViewCell.swift in Sources */,
+				CE89CE9A267A3EEC000724FA /* analysisView.swift in Sources */,
+				CE89CE7626779593000724FA /* fundallminiproject.xcdatamodeld in Sources */,
+				CE89CE8826782FA0000724FA /* loginViewController.swift in Sources */,
+				CE89CE6C26779593000724FA /* AppDelegate.swift in Sources */,
+				CE89CE6E26779593000724FA /* SceneDelegate.swift in Sources */,
+				CE89CE862677FDDF000724FA /* signInViewController.swift in Sources */,
+				CE89CEAB267CA49B000724FA /* pickCardTableViewCell.swift in Sources */,
+				CE89CE8C2678BFAC000724FA /* pickCardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE89CE7126779593000724FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE89CE7226779593000724FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE89CE7926779598000724FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE89CE7A26779598000724FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE89CE7D26779598000724FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE89CE7E26779598000724FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE89CE8026779598000724FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D183027289E3F1C4F7994E9C /* Pods-fundallminiproject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J32YTGF94;
+				INFOPLIST_FILE = fundallminiproject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = swifttechsolutions.fundallminiproject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CE89CE8126779598000724FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1D9862A01A8692711B932E /* Pods-fundallminiproject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J32YTGF94;
+				INFOPLIST_FILE = fundallminiproject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = swifttechsolutions.fundallminiproject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE89CE6326779593000724FA /* Build configuration list for PBXProject "fundallminiproject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE89CE7D26779598000724FA /* Debug */,
+				CE89CE7E26779598000724FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE89CE7F26779598000724FA /* Build configuration list for PBXNativeTarget "fundallminiproject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE89CE8026779598000724FA /* Debug */,
+				CE89CE8126779598000724FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE89CE7426779593000724FA /* fundallminiproject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE89CE7526779593000724FA /* fundallminiproject.xcdatamodel */,
+			);
+			currentVersion = CE89CE7526779593000724FA /* fundallminiproject.xcdatamodel */;
+			path = fundallminiproject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE89CE6026779593000724FA /* Project object */;
+}
