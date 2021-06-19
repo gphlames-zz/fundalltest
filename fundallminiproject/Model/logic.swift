@@ -16,10 +16,6 @@ protocol succesfullLogin {
     func didFailWithError(_ error : String)
     func goregardless()
 }
-protocol imaging{
-    func didretriveimage(_ data: Data)
-    func didFailWithError(_ error : Error)
-}
 struct Register{
     var endpoint = "https://campaign.fundall.io/api/v1/register"
     var delegate: checkError?
@@ -77,37 +73,6 @@ struct Register{
         }
     }
 }
-struct fetchImage{
-    var endpoint: String?
-    var token: String?
-    var delegate: imaging?
-    func getImage(){
-        let url = URL(string: endpoint ?? "")
-        var request = URLRequest(url: url!)
-        request.setValue("Bearer \(token ?? "")", forHTTPHeaderField: "Authorization")
-        request.httpMethod = "GET"
-        let session = URLSession.shared
-        let task = session.dataTask(with: request) { (data, response, error) in
-            
-            if let error = error {
-                self.delegate?.didFailWithError(error)
-                print(error.localizedDescription)
-                
-            } else if let data = data {
-                print(data)
-                self.delegate?.didretriveimage(data)
-            }
-            if let httpResponse = response as? HTTPURLResponse{
-                if httpResponse.statusCode == 400{
-                    self.delegate?.didFailWithError(httpResponse as! Error)
-                }
-                print("error \(httpResponse)")
-            }
-            
-        }
-        task.resume()
-    }
-}
 struct login{
     var endpoint = "https://campaign.fundall.io/api/v1/login"
     var delegate: succesfullLogin?
@@ -161,4 +126,3 @@ struct login{
     }
 
 }
-

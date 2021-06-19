@@ -37,13 +37,6 @@ class homeViewController: UIViewController {
         }catch{
             
         }
-        if let nonnilpic = pic{
-            if nonnilpic.count == 0{
-               
-            }else{
-                testphoto.image = UIImage(data: nonnilpic[0].avatarpng ?? Data())
-            }
-        }
     }
     func circularImage(_ images: [UIImageView]){
         for image in images{

@@ -34,18 +34,29 @@ struct Payload: Codable{
     var password_confirmation = ""
 }
 struct successlogin: Codable {
-    var status: Int
-    struct user: Decodable{
-        var id: Int
-        var firstname:String
-        var lastname: String
-        var email: String
-        var avatar: String
-        var access_token: String
-        var token_type: String
-        var expires_at: String
+//    struct user: Decodable{
+//        var id: Int
+//        var firstname:String
+//        var lastname: String
+//        var email: String
+//        var avatar: String
+//        var access_token: String
+//        var token_type: String
+//        var expires_at: String
+//    }
+    var users: userdetailsarray
+    enum outerkeys : String,CodingKey {
+        case succes = "success"
     }
-    
+    enum userkeys : String,CodingKey {
+        case user = "user"
+    }
+    init(from decoder: Decoder) throws {
+       
+        let outercontainer = try decoder.container(keyedBy: outerkeys.self)
+        let usercontainer = try outercontainer.nestedContainer(keyedBy: userkeys.self, forKey: .succes)
+        self.users = try usercontainer.decode(userdetailsarray.self, forKey: .user)
+    }
 }
 struct userPayload: Codable {
     var email: String

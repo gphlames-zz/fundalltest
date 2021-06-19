@@ -103,9 +103,9 @@ class analysisView: UIView {
         firstStackSecondLabel.textColor = UIColor(named: "top view home color")
         firstStackmiddleView.backgroundColor = UIColor(named: "top view home color")
         spendinglabel.text = "This month's spending"
-        amountLabel.attributedText = NSAttributedString(string: "₦178,500.00", attributes: [.font: UIFont.boldSystemFont(ofSize: 16)])
+        amountLabel.attributedText = NSAttributedString(string: "₦178,500.00", attributes: [.font: UIFont.boldSystemFont(ofSize: 20)])
+        amountLabel.textColor = UIColor(named: "top view home color")
         nextLabel.text = "You spent $2,732 on dining out this month. This is 25% more than last month"
-        //\(NSAttributedString(string: "Tell me more", attributes: [.font: UIFont.boldSystemFont(ofSize: 8),.underlineStyle: NSUnderlineStyle.single,.underlineColor:UIColor(named:"top view home color")]))"
         nextLabel.numberOfLines = 0
         welldoneLabel.text = "Well done you have maintained your spending"
         welldoneLabel.adjustsFontSizeToFitWidth = true
@@ -136,7 +136,7 @@ class analysisView: UIView {
        
        
         // MARK: - Mainview constraints
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-(5)-[v0(30)]-(10)-[v1(30)]-(5)-[v2(15)]-(5)-[v3(50)]-(5)-[v4(200)][v5(20)]-(2)-[v6(20)]-(2)-[v7(20)]-(5)-[v8(100)][v10(50)]-(5)-[v11(15)]-(5)-[v12(240)]-(20)-[v13(200)]-(50)-[v14(15)][v15(150)][v16(2)][v17(80)]", options: [], metrics: nil, views: ["v0":backButton,"v1":analyticsLabel,"v2":dateLabel,"v3":firstStack,"v4":walletandcardimage,"v5":spendinglabel,"v6":amountLabel,"v7":welldoneLabel,"v8":inflowStack,"v10":nextLabel,"v11":tableViewLabel,"v12":tableview,"v13":topCategoryView,"v14":incometrackerlabel,"v15":incomeLabelImageview,"v16":incomeunderview,"v17":collection]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-(5)-[v0(30)]-(10)-[v1(30)]-(5)-[v2(15)]-(5)-[v3(50)]-(5)-[v4(200)][v5(25)]-(2)-[v6(40)]-(2)-[v7(25)]-(5)-[v8(100)][v10(50)]-(5)-[v11(15)]-(5)-[v12(240)]-(20)-[v13(200)]-(50)-[v14(15)][v15(150)][v16(2)][v17(80)]", options: [], metrics: nil, views: ["v0":backButton,"v1":analyticsLabel,"v2":dateLabel,"v3":firstStack,"v4":walletandcardimage,"v5":spendinglabel,"v6":amountLabel,"v7":welldoneLabel,"v8":inflowStack,"v10":nextLabel,"v11":tableViewLabel,"v12":tableview,"v13":topCategoryView,"v14":incometrackerlabel,"v15":incomeLabelImageview,"v16":incomeunderview,"v17":collection]))
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(20)-[v0(50)]", options: [], metrics: nil, views: ["v0":backButton]))
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(20)-[v0]-(20)-|", options: [], metrics: nil, views: ["v0":analyticsLabel]))
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(20)-[v0]-(20)-|", options: [], metrics: nil, views: ["v0":dateLabel]))
@@ -191,16 +191,14 @@ class analysisView: UIView {
         inflowhorizontalStack2.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0][v1(60)]|", options: [], metrics: nil, views: ["v0":inflowverticalStack2,"v1":inflowamountLabel2]))
         // MARK: - topcategoryview constraints
         topCategoryView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-(2)-[v0(15)]-(20)-[v1]-(30)-|", options: [], metrics: nil, views: ["v0":topCategoryLabel,"v1":categoryImageStack]))
-        topCategoryView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(20)-[v0]|", options: [], metrics: nil, views: ["v0":topCategoryLabel,"v1":categoryImageStack]))
+        topCategoryView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(20)-[v0]|", options: [], metrics: nil, views: ["v0":topCategoryLabel]))
         topCategoryView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(20)-[v0]-(20)-|", options: [], metrics: nil, views: ["v0":categoryImageStack]))
         
         // MARK: - categoryImageStack constraints
-
-        categoryImageStack.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0(150)]-(20)-[v1(150)]|", options: [], metrics: nil, views: ["v0":topcategoryImageView,"v1":topcategoryImageView1]))
+        
+        categoryImageStack.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]-(20)-[v1]|", options: [], metrics: nil, views: ["v0":topcategoryImageView,"v1":topcategoryImageView1]))
         categoryImageStack.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: [], metrics: nil, views: ["v0":topcategoryImageView]))
         categoryImageStack.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: [], metrics: nil, views: ["v0":topcategoryImageView1]))
-        
-        
         
         
     }

@@ -16,11 +16,8 @@ class loginViewController: UIViewController {
     @IBOutlet weak var textfield: UITextField!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var profilePicImage: UIImageView!
-    var fetch = fetchImage()
     var log = login()
-    //var userpay = userdetailsarray()
     var user: UserDetails?
-    var fetchedData:[UserDetails]?
     var firstname: String?
     var email: String?
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -33,7 +30,6 @@ class loginViewController: UIViewController {
         super.viewDidLoad()
         addsubLayer(passwordStack)
         makeImageCircular(profilePicImage)
-        fetch.delegate = self
         log.delegate = self
         missyouLabel.text = "We miss you \(firstname!)"
         emailLabel.text = "\(email!)"
@@ -41,7 +37,6 @@ class loginViewController: UIViewController {
     }
     func makeImageCircular(_ image: UIImageView){
          image.layer.masksToBounds = false
-         image.layer.borderColor = UIColor.white.cgColor
          image.layer.cornerRadius = image.frame.size.height/2
          image.clipsToBounds = true
     }
@@ -65,7 +60,7 @@ class loginViewController: UIViewController {
     */
 
 }
-extension loginViewController: succesfullLogin,imaging{
+extension loginViewController: succesfullLogin{
     func didFailWithError(_ error: Error) {
         
     }
@@ -81,51 +76,50 @@ extension loginViewController: succesfullLogin,imaging{
         }
     }
     
-    
-    func didretriveimage(_ data: Data) {
-        do{
-            fetchedData = try context.fetch(UserDetails.fetchRequest())
-            fetchedData?[0].avatarpng = data
-            try context.save()
-            DispatchQueue.main.async {
-                self.profilePicImage.image = UIImage(data: data)
-            }
-        }catch{
-            let alert = UIAlertController(title: "Error", message: "Couldn't pass data to imageview", preferredStyle: .alert)
-            present(alert, animated: true, completion: {
-                self.goregardless()
-            })
-        }
-        
-    }
-    
     func loginsuccessful(_ userd: successlogin) {
-//        if userd.status == "SUCCESS"{
-////            user = UserDetails(context: context)
-////            user?.firstname = userd.user.firstname
-////            user?.lastname = userd.user.lastname
-////            user?.email = userd.user.email
-////            user?.ids = Int32(userd.user.id)
-////            user?.access_token = userd.user.access_token
-////            user?.expires_at = userd.user.expires_at
-////            fetch.token = userd.user.access_token
-////            fetch.endpoint = userd.user.avatar
-////            do{
-////                try context.save()
-////            }catch{
-////
-////            }
-////            fetch.getImage()
-//            print("successful")
-//
-//        }else{
-//            DispatchQueue.main.async {
-//                let alert = UIAlertController(title: "Error", message: userd.status, preferredStyle: .alert)
-//                self.present(alert, animated: true, completion: {
-//                    self.goregardless()
-//                })
-//            }
-//        }
+        if userd.users.id != 0{
+            var times = [UserDetails]()
+            do{
+                times = try context.fetch(UserDetails.fetchRequest())
+            }catch{
+                
+            }
+            if times.count == 0{
+            user = UserDetails(context: context)
+            user?.firstname = userd.users.firstname
+            user?.lastname = userd.users.lastname
+            user?.email = userd.users.email
+            user?.ids = Int32(userd.users.id)
+            user?.access_token = userd.users.access_token
+            user?.expires_at = userd.users.expires_at
+            do{
+                try context.save()
+            }catch{
+
+            }
+            }else{
+                times[0].access_token = userd.users.access_token
+                times[0].firstname = userd.users.firstname
+                times[0].lastname = userd.users.lastname
+                times[0].email = userd.users.email
+                times[0].ids = Int32(userd.users.id)
+                times[0].access_token = userd.users.access_token
+                times[0].expires_at = userd.users.expires_at
+                do{
+                    try context.save()
+                }catch{
+
+                }
+            }
+
+        }else{
+            DispatchQueue.main.async {
+                let alert = UIAlertController(title: "Error", message: "Failed to retrieve user data", preferredStyle: .alert)
+                self.present(alert, animated: true, completion: {
+                    self.goregardless()
+                })
+            }
+        }
         
     }
     

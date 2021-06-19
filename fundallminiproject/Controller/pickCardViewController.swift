@@ -45,13 +45,17 @@ extension pickCardViewController: UICollectionViewDelegate,UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! pickCardCollectionViewCell
+        cell.contentView.addSubview(cell.namelabel)
+        cell.contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: [], metrics: nil, views: ["v0":cell.namelabel]))
+        cell.contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0(30)]", options: [], metrics: nil, views: ["v0":cell.namelabel]))
+
         cell.namelabel.attributedText = NSAttributedString(string: collectData[indexPath.row], attributes: [.font:UIFont.boldSystemFont(ofSize: 13)])
         cell.namelabel.textColor = .black
         cell.backgroundColor = .gray
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 180, height: 250)
+        return CGSize(width: 150, height: 200)
     }
     
 

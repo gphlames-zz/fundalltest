@@ -3,7 +3,6 @@
     <entity name="UserDetails" representedClassName="UserDetails" syncable="YES" codeGenerationType="class">
         <attribute name="access_token" attributeType="String"/>
         <attribute name="avatar" attributeType="String"/>
-        <attribute name="avatarpng" optional="YES" attributeType="Binary"/>
         <attribute name="email" attributeType="String"/>
         <attribute name="expires_at" attributeType="String"/>
         <attribute name="firstname" attributeType="String"/>
@@ -11,6 +10,6 @@
         <attribute name="lastname" attributeType="String"/>
     </entity>
     <elements>
-        <element name="UserDetails" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="UserDetails" positionX="-63" positionY="-18" width="128" height="148"/>
     </elements>
 </model>

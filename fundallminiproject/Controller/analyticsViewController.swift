@@ -55,44 +55,10 @@ class analyticsViewController: UIViewController {
             
         scrollview.contentSize = CGSize(width: analyticsview.frame.width, height: height + 119.0)
         scrollview.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 30, right: 0)
-        print("Viewdidlayoutsubviews")
-       
-        print("mainview height:\(analyticsview.frame.height)")
-        print("view height:\(view.frame.height)")
-        print("scrollview height:\(scrollview.frame.height)")
-        print("scrollview content size:\(scrollview.contentSize)")
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        print("ViewWillappear")
-        print("mainview height:\(analyticsview.frame.height)")
-        print("view height:\(view.frame.height)")
-        print("scrollview height:\(scrollview.frame.height)")
-        print("scrollview content size:\(scrollview.contentSize)")
-    }
-    override func viewDidAppear(_ animated: Bool) {
-//
-//        let bottomOffset = CGPoint(x: 0, y: analyticsview.scrollview.frame.height)
-//        analyticsview.scrollview.setContentOffset(bottomOffset, animated: true)
-//        analyticsview.scrollview.contentSize = CGSize(width: analyticsview.mainView.frame.width, height: height + 119.0)
-        print("Viewdidappear")
-        print("mainview height:\(analyticsview.frame.height)")
-        print("view height:\(view.frame.height)")
-        print("scrollview height:\(scrollview.frame.height)")
-        print("scrollview content size:\(scrollview.contentSize)")
     }
     @objc func closeview(){
         dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 extension analyticsViewController: UIScrollViewDelegate{
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
